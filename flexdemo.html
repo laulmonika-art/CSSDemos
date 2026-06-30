@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            height:544px;
+            width:100%;
+
+            border:1px solid red;
+            font-size: 50px;
+            display: flex;
+            /* flex-direction: row; */
+            /* flex-direction:row-reverse; */
+
+            /* flex-direction:column-reverse; */
+         justify-content: center;
+         justify-content:space-between;
+                    justify-content:space-evenly;
+                            align-items:center; 
+        }
+        .item
+        {
+                       height:100px;
+            width:100px;
+            background-color:tomato;
+            border:2px solid red;
+            margin:10px;
+            padding:10px;
+
+        }
+
+        #item-1
+        {
+            /* order: 2; */
+            flex-grow: 2;
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+    <div class="item"> 100 </div>
+    <div class="item"> 200 </div>
+    <div class="item"> 300 </div>
+    <div class="item" id="item-1"> 400 </div>
+    <div class="item"> 500 </div>
+    <div class="item"> 600 </div>
+    <div class="item"> 700 </div>
+    </div>
+</body>
+</html>
+

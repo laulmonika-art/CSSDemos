@@ -1,0 +1,26 @@
+/* to create style rules 
+ */
+ *
+ {
+     padding:10px;
+     margin:10px;
+ }
+
+ body
+ {
+    
+       font-family: "Courier New", Courier, monospace;
+      
+ }
+
+ .class1
+ {
+    color:red;
+    border: 5px dotted blue;
+ }
+
+ img
+ {
+    width:100px;
+    height:100px;
+ }

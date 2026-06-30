@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form novalidate>
+       <table>
+        <tr>
+            <td><label for="txtName"> Name </label></td>
+            <td><input type="text" name="txtName" pattern="^[a-zA-Z ]+" required minlength="10"/></td>
+        </tr>
+         <tr>
+            <td><label for="txtAge"> Age </label></td>
+            <td><input type="number" name="txtAge" required min="20" max="45"/>
+        </td>
+        </tr>
+        <tr>
+            <td> <label for="txtSalary"> Salary </label></td>
+       <td> <input type="number" name="txtSalary" required min="10000" max="35000"/></td>
+        </tr>
+        <tr>
+    <td> Select Age </td>
+    <td>
+        <input id="ageCategory" name="ageCategory" list="ageRanges" />
+        <datalist id="ageRanges">
+            <option value="Under Two's"></option>
+            <option value="2-7"> </option>
+            <option value="8-12"> </option>
+            <option value="13-17"> </option>
+    <option value="Adult"> </option>
+        </datalist>
+</td>
+</tr>
+<tr>
+    <td>Select Car </td>
+    <td> <select id="carManufacturer">
+        <optgroup label="European">
+            <option value="volvo"> Volvo </option>
+            <option value="audi"> Audi </option>
+        </optgroup>
+        <optgroup label="American">
+            <option value="chrysler"> Chrysler </option>
+            <option value="ford"> Ford </option>
+        </optgroup>
+    </select>
+</td></tr>
+<tr>
+    <td> Select course </td>
+    <td> <select>
+        <option> C </option>
+         <option> C++ </option>
+          <option> C# </option>
+    </select></td>
+</tr>
+
+<tr>
+    <td colspan="2">     <button type="submit"> Submit </button></td>
+</tr>
+       </table>
+    
+       
+         
+    </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="txtName"> Name </label>
+            <input type="text" name="txtName" pattern="^[a-zA-Z ]+" required minlength="10"/>
+        </div>
+          <div>
+            <label for="txtAge"> Age </label>
+            <input type="number" name="txtAge" required min="20" max="45"/>
+        </div>
+        <div>
+            <label for="txtSalary"> Salary </label>
+            <input type="number" name="txtSalary" required min="10000" max="35000"/>
+        </div>
+        
+        <div>
+            <button type="submit"> Submit </button>
+        </div>
+
+    </form>
+</body>
+</html>
